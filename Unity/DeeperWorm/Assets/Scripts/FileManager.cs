@@ -12,9 +12,13 @@ public class FileManager : MonoBehaviour
     [SerializeField]
     private RectTransform FolderOrganiser;
     List<RectTransform> Folders = new List<RectTransform>();
+    private Dir currentDir;
 
     private void Start()
     {
+        //init root dir
+        currentDir = new Dir();
+
         AddFolders();
     }
 
@@ -32,14 +36,29 @@ public class FileManager : MonoBehaviour
             Destroy(rect.gameObject);
         }
         Folders.Clear();
+
+        //if folder correct spawn next tier of folders, else leave empty
+
+        if (newFolder.Directory.IsCorrect)
+        {
+            if (newFolder.Directory.Children.Count == 0)
+            {
+                newFolder.Directory.MakeChildren();
+            }
+        }
+
+        currentDir = newFolder.Directory;
         AddFolders();
+        Debug.Log($"Correct Directory is {currentDir.CorrectDir.Name}");
     }
 
     private void AddFolders()
     {
-        for (int i = 0, j = FoldersToMake(); i < j; ++i)
+        //only runs if children is populated
+        for (int i = 0; i < currentDir.Children.Count; i++)
         {
             Folders.Add(Instantiate(FolderPrefab, FolderOrganiser));
+            Folders[i].gameObject.GetComponent<FileFolder>().SetDirectory(currentDir.Children[i]);
         }
     }
 

@@ -5,6 +5,7 @@ using TMPro;
 
 public class FileFolder : MonoBehaviour, IOurClickable
 {
+    public Dir Directory { get; private set; }
     public string FolderName = "Default";
     [SerializeField]
     private TextMeshProUGUI FolderNameText;
@@ -12,32 +13,21 @@ public class FileFolder : MonoBehaviour, IOurClickable
     private float DoubleClickTime = 0.2f;
     private float LastClicked;
 
-    private readonly char[] Consanants = { 'k', 's', 't', 'h', 'm', 'n', 'y', 'r', 'w' };
-    private readonly char[] Vowels = { 'a', 'i', 'u', 'e', 'o' };
+
+    public void SetDirectory(Dir dir)
+    {
+        Directory = dir;
+        FolderName = dir.Name;
+        UpdateText();
+    }
+
 
     private void Awake()
     {
         LastClicked = -DoubleClickTime * 2.0f;
-        PickName();
     }
 
-    private void PickName()
-    {
-        FolderName = "";
-        int nameLength = Random.Range(2, 11);
-        while (FolderName.Length < nameLength)
-        {
-            if (FolderName.Length % 2 == 0)
-            {
-                FolderName += Consanants[Random.Range(0, Consanants.Length)];
-            }
-            else
-            {
-                FolderName += Vowels[Random.Range(0, Vowels.Length)];
-            }
-        }
-        UpdateText();
-    }
+
 
     private void UpdateText()
     {
