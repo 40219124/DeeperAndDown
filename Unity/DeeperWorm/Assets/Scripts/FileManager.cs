@@ -49,7 +49,14 @@ public class FileManager : MonoBehaviour
 
         currentDir = newFolder.Directory;
         AddFolders();
-        Debug.Log($"Correct Directory is {currentDir.CorrectDir.Name}");
+        if (currentDir.CorrectDir is null)
+        {
+            Debug.Log("No correct directory available.");
+        }
+        else
+        {
+            Debug.Log($"Correct Directory is {currentDir.CorrectDir.Name}");
+        }
     }
 
     private void AddFolders()
