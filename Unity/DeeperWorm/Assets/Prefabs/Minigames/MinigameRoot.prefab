@@ -262,6 +262,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   MinigameCam: {fileID: 8013138203267312743}
+  RenderCam: {fileID: 0}
 --- !u!61 &8013138204219752015
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -344,6 +345,7 @@ MonoBehaviour:
   - {fileID: 1078710824911557956, guid: a2ed550ac5edff44695185348dd0087c, type: 3}
   - {fileID: 54870532019527093, guid: 1760207e71871b6418eb937b970ec1b3, type: 3}
   - {fileID: 8835729672084097850, guid: 11b7cd98027dda14aac30e6236e06282, type: 3}
+  - {fileID: 1716540975818995392, guid: 01b5b7fb1f17c794ead1994adef680a6, type: 3}
 --- !u!1 &8013138204691681929
 GameObject:
   m_ObjectHideFlags: 0
