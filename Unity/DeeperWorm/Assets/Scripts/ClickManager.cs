@@ -6,7 +6,11 @@ public class ClickManager : MonoBehaviour
 {
     Camera MainCamera;
     [SerializeField]
-    Transform target;
+    Camera TextureCamera;
+    [SerializeField]
+    Transform Target; // ~~~ debug
+    [SerializeField]
+    Canvas Canvas;
 
     // Start is called before the first frame update
     void Start()
@@ -19,8 +23,8 @@ public class ClickManager : MonoBehaviour
     {
         if (Input.GetMouseButtonDown(0))
         {
-            Vector3 worldPos = MainCamera.ScreenToWorldPoint(Input.mousePosition);
-            target.position = new Vector3(worldPos.x, worldPos.y, 0); 
+            Vector3 worldPos = TextureCamera.ScreenToWorldPoint(Input.mousePosition);
+            Target.position = new Vector3(worldPos.x, worldPos.y, 0); 
             Debug.DrawRay(worldPos, Vector3.forward * 10.0f, Color.green,2.0f);
             //Debug.Log(worldPos);
             RaycastHit2D hit = Physics2D.Raycast(worldPos, Vector2.zero);

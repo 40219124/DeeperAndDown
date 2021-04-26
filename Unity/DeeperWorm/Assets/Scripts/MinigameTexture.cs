@@ -6,6 +6,8 @@ public class MinigameTexture : MonoBehaviour, IOurClickable
 {
     [SerializeField]
     Camera MinigameCam;
+    [SerializeField]
+    Camera RenderCam;
     Vector3 RayTranslation;
     private void Start()
     {
@@ -15,7 +17,7 @@ public class MinigameTexture : MonoBehaviour, IOurClickable
     {
         if (GameAssistant.Running)
         {
-            Vector3 clickPos = GameAssistant.MainCamera.ScreenToWorldPoint(Input.mousePosition);
+            Vector3 clickPos = RenderCam.ScreenToWorldPoint(Input.mousePosition);
             Vector3 newRayPos = clickPos + RayTranslation;
             newRayPos.z = MinigameCam.transform.position.z;
             Physics.Raycast(newRayPos, Vector3.forward, out RaycastHit hit, 100.0f);
