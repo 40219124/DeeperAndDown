@@ -6,9 +6,15 @@ using UnityEngine;
 public static class GameEvents
 {
     public static event Action OnFolderChanged;
+    public static event Action OnWormMove;
     public static event Action OnGameStart;
     public static event Action<bool> OnGameEnd;
     public static event Action OnMinigameWin;
+
+    public static void WormMoved()
+    {
+        OnWormMove?.Invoke();
+    }
 
     public static void FolderChanged()
     {

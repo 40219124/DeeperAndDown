@@ -57,6 +57,7 @@ public class WormManager : MonoBehaviour
                 WormDepth++;
                 Debug.Log($"Player depth: {FileBrowser.UserDepth}. Worm depth: {WormDepth}.");
                 LastDepthIncrease = Time.time;
+                GameEvents.WormMoved();
             }
         }
     }
