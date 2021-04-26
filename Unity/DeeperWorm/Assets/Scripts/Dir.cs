@@ -36,7 +36,7 @@ public class Dir
     {
         Parent = parent;
         PickName();
-        Debug.Log($"Child of {parent.Name} constructed.");
+        //Debug.Log($"Child of {parent.Name} constructed.");
     }
 
     private void PickName()
@@ -58,7 +58,7 @@ public class Dir
 
     public void MakeChildren()
     {
-        Debug.Log($"Generating children for {Name}");
+        //Debug.Log($"Generating children for {Name}");
         if (IsCorrect)
         {
             numChildren = Random.Range(2, 11);
@@ -72,7 +72,7 @@ public class Dir
             int randCorrect = Random.Range(0, numChildren);
             Children[randCorrect].IsCorrect = true;
             CorrectDir = Children[randCorrect];
-            Debug.Log($"Child number {randCorrect}, {CorrectDir.Name} is the correct directory.");
+            //Debug.Log($"Child number {randCorrect}, {CorrectDir.Name} is the correct directory.");
         }
         else
         {

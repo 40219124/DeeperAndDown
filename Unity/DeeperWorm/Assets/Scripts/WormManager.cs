@@ -35,7 +35,7 @@ public class WormManager : MonoBehaviour
 
     private IEnumerator GetBrowser()
     {
-        while(FileBrowser == null)
+        while (FileBrowser == null)
         {
             FileBrowser = FindObjectOfType<FileManager>();
             yield return null;
@@ -52,9 +52,10 @@ public class WormManager : MonoBehaviour
     {
         if (GameAssistant.Running)
         {
-            if(Time.time - LastDepthIncrease > TimeToWait())
+            if (Time.time - LastDepthIncrease > TimeToWait())
             {
                 WormDepth++;
+                Debug.Log($"Player depth: {FileBrowser.UserDepth}. Worm depth: {WormDepth}.");
                 LastDepthIncrease = Time.time;
             }
         }
@@ -62,7 +63,7 @@ public class WormManager : MonoBehaviour
 
     private float TimeToWait()
     {
-        if(WormDepth == FileBrowser.UserDepth)
+        if (WormDepth == FileBrowser.UserDepth)
         {
             return float.MaxValue;
         }

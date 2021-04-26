@@ -11,6 +11,8 @@ public class FileManager : MonoBehaviour
     private RectTransform FolderPrefab;
     [SerializeField]
     private RectTransform FolderOrganiser;
+    [SerializeField]
+    public RectTransform CorrectFolderPrefab;
     List<RectTransform> Folders = new List<RectTransform>();
     private Dir currentDir;
 
@@ -61,14 +63,14 @@ public class FileManager : MonoBehaviour
 
         currentDir = newFolder.Directory;
         AddFolders();
-        if (currentDir.CorrectDir is null)
+        /*if (currentDir.CorrectDir is null)
         {
             Debug.Log("No correct directory available.");
         }
         else
         {
             Debug.Log($"Correct Directory is {currentDir.CorrectDir.Name}");
-        }
+        }*/
 
         GameEvents.FolderChanged();
     }
@@ -80,6 +82,10 @@ public class FileManager : MonoBehaviour
         {
             Folders.Add(Instantiate(FolderPrefab, FolderOrganiser));
             Folders[i].gameObject.GetComponent<FileFolder>().SetDirectory(currentDir.Children[i]);
+            if (currentDir.Children[i].IsCorrect)
+            {
+                Instantiate(CorrectFolderPrefab, Folders[i]);
+            }
         }
     }
 }
