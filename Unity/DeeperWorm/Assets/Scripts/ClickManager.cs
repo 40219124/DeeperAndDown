@@ -21,7 +21,7 @@ public class ClickManager : MonoBehaviour
         {
             Vector3 worldPos = MainCamera.ScreenToWorldPoint(Input.mousePosition);
             target.position = new Vector3(worldPos.x, worldPos.y, 0); 
-            //Debug.DrawRay(worldPos, Vector3.forward, Color.green,2.0f);
+            Debug.DrawRay(worldPos, Vector3.forward * 10.0f, Color.green,2.0f);
             //Debug.Log(worldPos);
             RaycastHit2D hit = Physics2D.Raycast(worldPos, Vector2.zero);
             if((hit.collider != null) && TryGetClickable(hit.collider, out IOurClickable clickable))
