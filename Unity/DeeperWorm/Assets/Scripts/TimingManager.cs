@@ -12,7 +12,7 @@ public class TimingManager : MonoBehaviour
     MinigameController MinigameController;
 
     private readonly int MinDist = 10;
-    private readonly float MinDistDelay = 5.0f;
+    private readonly float MinDistDelay = 3.0f;
     private readonly int MaxDist = 50;
     private readonly float MaxDistDelay = 10.0f;
 
