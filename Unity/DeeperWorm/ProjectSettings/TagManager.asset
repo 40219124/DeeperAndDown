@@ -15,7 +15,7 @@ TagManager:
   - 
   - 
   - 
-  - 
+  - RenderTexture
   - 
   - 
   - 
@@ -44,6 +44,12 @@ TagManager:
   - name: desktopBG
     uniqueID: 733830503
     locked: 0
+  - name: Background
+    uniqueID: 1986947265
+    locked: 0
+  - name: Midground
+    uniqueID: 2715092531
+    locked: 0
   - name: fileExplorer
     uniqueID: 2537462715
     locked: 0
@@ -55,4 +61,7 @@ TagManager:
     locked: 0
   - name: Popup
     uniqueID: 2060226353
+    locked: 0
+  - name: Foreground
+    uniqueID: 3767575365
     locked: 0
