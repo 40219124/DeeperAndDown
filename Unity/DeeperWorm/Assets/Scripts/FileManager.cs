@@ -10,9 +10,13 @@ public class FileManager : MonoBehaviour
     [SerializeField]
     private RectTransform FolderPrefab;
     [SerializeField]
+    private RectTransform WormPrefab;
+    [SerializeField]
     private RectTransform FolderOrganiser;
     [SerializeField]
     public RectTransform CorrectFolderPrefab;
+    [SerializeField]
+    private WormManager Worm;
     List<RectTransform> Folders = new List<RectTransform>();
     private Dir currentDir;
 
@@ -70,15 +74,15 @@ public class FileManager : MonoBehaviour
         }
 
         currentDir = newFolder;
-        AddFolders();
-        /*if (currentDir.CorrectDir is null)
+
+        if (UserDepth == Worm.WormDepth)
         {
-            Debug.Log("No correct directory available.");
+            Instantiate(WormPrefab, FolderOrganiser);
         }
         else
         {
-            Debug.Log($"Correct Directory is {currentDir.CorrectDir.Name}");
-        }*/
+            AddFolders();
+        }
 
         GameEvents.FolderChanged();
     }

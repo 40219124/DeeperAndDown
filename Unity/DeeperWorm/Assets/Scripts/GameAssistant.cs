@@ -15,11 +15,18 @@ public class GameAssistant : MonoBehaviour
     private void OnEnable()
     {
         GameEvents.OnGameStart += GameStart;
+        GameEvents.OnGameEnd += GameEnd;
     }
 
     private void OnDisable()
     {
         GameEvents.OnGameStart -= GameStart;
+        GameEvents.OnGameEnd -= GameEnd;
+    }
+
+    private void GameEnd(bool _)
+    {
+        Running = false;
     }
 
     private void GameStart()

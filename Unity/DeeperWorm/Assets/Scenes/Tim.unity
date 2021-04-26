@@ -829,22 +829,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 5321692450839479179, guid: 20fca903ebafda440aa782fe119b3efe, type: 3}
-      propertyPath: m_Color.a
-      value: 0.27058825
-      objectReference: {fileID: 0}
-    - target: {fileID: 6843898598344154072, guid: 20fca903ebafda440aa782fe119b3efe, type: 3}
-      propertyPath: m_Color.b
-      value: 0.9056604
-      objectReference: {fileID: 0}
-    - target: {fileID: 6843898598344154072, guid: 20fca903ebafda440aa782fe119b3efe, type: 3}
-      propertyPath: m_Color.g
-      value: 0.9056604
-      objectReference: {fileID: 0}
-    - target: {fileID: 6843898598344154072, guid: 20fca903ebafda440aa782fe119b3efe, type: 3}
-      propertyPath: m_Color.r
-      value: 0.9056604
-      objectReference: {fileID: 0}
+    - target: {fileID: 3776796592131870910, guid: 20fca903ebafda440aa782fe119b3efe, type: 3}
+      propertyPath: Worm
+      value: 
+      objectReference: {fileID: 1120964696}
     - target: {fileID: 7094116511365769344, guid: 20fca903ebafda440aa782fe119b3efe, type: 3}
       propertyPath: m_Name
       value: FileBrowser
@@ -950,22 +938,6 @@ PrefabInstance:
       propertyPath: m_Camera
       value: 
       objectReference: {fileID: 446658734}
-    - target: {fileID: 8013138204473789446, guid: c3159df58ff2e7c4d84b87a91db2e237, type: 3}
-      propertyPath: Minigames.Array.size
-      value: 5
-      objectReference: {fileID: 0}
-    - target: {fileID: 8013138204473789446, guid: c3159df58ff2e7c4d84b87a91db2e237, type: 3}
-      propertyPath: Minigames.Array.data[2]
-      value: 
-      objectReference: {fileID: 1078710824911557956, guid: a2ed550ac5edff44695185348dd0087c, type: 3}
-    - target: {fileID: 8013138204473789446, guid: c3159df58ff2e7c4d84b87a91db2e237, type: 3}
-      propertyPath: Minigames.Array.data[3]
-      value: 
-      objectReference: {fileID: 54870532019527093, guid: 1760207e71871b6418eb937b970ec1b3, type: 3}
-    - target: {fileID: 8013138204473789446, guid: c3159df58ff2e7c4d84b87a91db2e237, type: 3}
-      propertyPath: Minigames.Array.data[4]
-      value: 
-      objectReference: {fileID: 8835729672084097850, guid: 11b7cd98027dda14aac30e6236e06282, type: 3}
     - target: {fileID: 8013138204473789447, guid: c3159df58ff2e7c4d84b87a91db2e237, type: 3}
       propertyPath: m_RootOrder
       value: 6

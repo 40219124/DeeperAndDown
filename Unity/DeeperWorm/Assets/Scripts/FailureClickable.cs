@@ -6,6 +6,9 @@ public class FailureClickable : MonoBehaviour, IOurClickable
 {
     public void Clicked()
     {
-        GetComponentInParent<MinigameController>().MiniGameSuccess(false);
+        if (GameAssistant.Running)
+        {
+            GetComponentInParent<MinigameController>().MiniGameSuccess(false);
+        }
     }
 }

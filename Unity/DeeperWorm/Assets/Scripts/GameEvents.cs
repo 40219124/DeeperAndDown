@@ -7,6 +7,7 @@ public static class GameEvents
 {
     public static event Action OnFolderChanged;
     public static event Action OnGameStart;
+    public static event Action<bool> OnGameEnd;
     public static event Action OnMinigameWin;
 
     public static void FolderChanged()
@@ -25,5 +26,10 @@ public static class GameEvents
         {
             OnMinigameWin?.Invoke();
         }
+    }
+
+    public static void GameEnd(bool won)
+    {
+        OnGameEnd?.Invoke(won);
     }
 }

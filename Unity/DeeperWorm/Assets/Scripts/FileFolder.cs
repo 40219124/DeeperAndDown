@@ -32,12 +32,15 @@ public class FileFolder : MonoBehaviour, IOurClickable
 
     public void Clicked()
     {
-        if (DoubleClicked())
+        if (GameAssistant.Running)
         {
-            GetComponentInParent<FileManager>().EnterFolder(Directory);
-        }
+            if (DoubleClicked())
+            {
+                GetComponentInParent<FileManager>().EnterFolder(Directory);
+            }
 
-        LastClicked = Time.time;
+            LastClicked = Time.time;
+        }
     }
 
     private bool DoubleClicked()
