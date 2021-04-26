@@ -893,6 +893,22 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 5321692450839479179, guid: 20fca903ebafda440aa782fe119b3efe, type: 3}
+      propertyPath: m_Color.a
+      value: 0.27058825
+      objectReference: {fileID: 0}
+    - target: {fileID: 6843898598344154072, guid: 20fca903ebafda440aa782fe119b3efe, type: 3}
+      propertyPath: m_Color.b
+      value: 0.9056604
+      objectReference: {fileID: 0}
+    - target: {fileID: 6843898598344154072, guid: 20fca903ebafda440aa782fe119b3efe, type: 3}
+      propertyPath: m_Color.g
+      value: 0.9056604
+      objectReference: {fileID: 0}
+    - target: {fileID: 6843898598344154072, guid: 20fca903ebafda440aa782fe119b3efe, type: 3}
+      propertyPath: m_Color.r
+      value: 0.9056604
+      objectReference: {fileID: 0}
     - target: {fileID: 7094116511365769344, guid: 20fca903ebafda440aa782fe119b3efe, type: 3}
       propertyPath: m_Name
       value: FileBrowser

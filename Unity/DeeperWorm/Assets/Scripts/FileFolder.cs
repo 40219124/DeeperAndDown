@@ -13,7 +13,6 @@ public class FileFolder : MonoBehaviour, IOurClickable
     private float DoubleClickTime = 0.2f;
     private float LastClicked;
 
-
     public void SetDirectory(Dir dir)
     {
         Directory = dir;
@@ -21,13 +20,10 @@ public class FileFolder : MonoBehaviour, IOurClickable
         UpdateText();
     }
 
-
     private void Awake()
     {
         LastClicked = -DoubleClickTime * 2.0f;
     }
-
-
 
     private void UpdateText()
     {
@@ -38,7 +34,7 @@ public class FileFolder : MonoBehaviour, IOurClickable
     {
         if (DoubleClicked())
         {
-            GetComponentInParent<FileManager>().EnterFolder(this);
+            GetComponentInParent<FileManager>().EnterFolder(Directory);
         }
 
         LastClicked = Time.time;

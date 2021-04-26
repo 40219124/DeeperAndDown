@@ -26,25 +26,33 @@ public class FileManager : MonoBehaviour
         AddFolders();
     }
 
-    public void EnterFolder(FileFolder newFolder)
+    public void EnterFolder(Dir newFolder)
     {
         StartCoroutine(EnterFolderDelayed(newFolder));
     }
 
-    private IEnumerator EnterFolderDelayed(FileFolder newFolder)
+    public void GoBackFolder()
+    {
+        if (currentDir.Parent != null)
+        {
+            EnterFolder(currentDir.Parent);
+        }
+    }
+
+    private IEnumerator EnterFolderDelayed(Dir newFolder)
     {
         yield return null;
 
-        if(currentDir.CorrectDir == newFolder.Directory)
+        if (currentDir.CorrectDir == newFolder)
         {
             UserDepth++;
         }
-        else if(currentDir.Parent == newFolder.Directory)
+        else if (currentDir.Parent == newFolder)
         {
             UserDepth--;
         }
 
-        CurrentFolder.text = newFolder.FolderName;
+        CurrentFolder.text = newFolder.Name;
         foreach (RectTransform rect in Folders)
         {
             Destroy(rect.gameObject);
@@ -53,15 +61,15 @@ public class FileManager : MonoBehaviour
 
         //if folder correct spawn next tier of folders, else leave empty
 
-        if (newFolder.Directory.IsCorrect)
+        if (newFolder.IsCorrect)
         {
-            if (newFolder.Directory.Children.Count == 0)
+            if (newFolder.Children.Count == 0)
             {
-                newFolder.Directory.MakeChildren();
+                newFolder.MakeChildren();
             }
         }
 
-        currentDir = newFolder.Directory;
+        currentDir = newFolder;
         AddFolders();
         /*if (currentDir.CorrectDir is null)
         {
