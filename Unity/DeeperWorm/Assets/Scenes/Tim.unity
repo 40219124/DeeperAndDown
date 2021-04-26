@@ -614,10 +614,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 6535420935819590962, guid: a0ebf92fc02227945870dfea53f0c897, type: 3}
-      propertyPath: m_SortingLayerID
-      value: -527391931
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a0ebf92fc02227945870dfea53f0c897, type: 3}
 --- !u!1001 &2116692821782051117
@@ -711,12 +707,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 3803406004937862953, guid: 4919df64ec8c2444ba000b3ad0a5cd38, type: 3}
-      propertyPath: m_text
-      value: "Last chance to save\n  your computer, friend.\n            But you've
-        gotta\n catch me if you wanna stop me. \n  Got what it takes?\n      - The
-        Worm"
-      objectReference: {fileID: 0}
     - target: {fileID: 5618696812282184931, guid: 4919df64ec8c2444ba000b3ad0a5cd38, type: 3}
       propertyPath: m_Name
       value: GameStart
@@ -725,75 +715,8 @@ PrefabInstance:
       propertyPath: m_Camera
       value: 
       objectReference: {fileID: 446658734}
-    - target: {fileID: 6488526280284602572, guid: 4919df64ec8c2444ba000b3ad0a5cd38, type: 3}
-      propertyPath: m_SizeDelta.x
-      value: 1.5999999
-      objectReference: {fileID: 0}
-    - target: {fileID: 6488526280284602572, guid: 4919df64ec8c2444ba000b3ad0a5cd38, type: 3}
-      propertyPath: m_SizeDelta.y
-      value: -0.4000008
-      objectReference: {fileID: 0}
-    - target: {fileID: 6488526280284602572, guid: 4919df64ec8c2444ba000b3ad0a5cd38, type: 3}
-      propertyPath: m_LocalScale.x
-      value: 0.8
-      objectReference: {fileID: 0}
-    - target: {fileID: 6488526280284602572, guid: 4919df64ec8c2444ba000b3ad0a5cd38, type: 3}
-      propertyPath: m_LocalScale.y
-      value: 0.8
-      objectReference: {fileID: 0}
-    - target: {fileID: 6488526280284602572, guid: 4919df64ec8c2444ba000b3ad0a5cd38, type: 3}
-      propertyPath: m_AnchoredPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6488526280284602572, guid: 4919df64ec8c2444ba000b3ad0a5cd38, type: 3}
-      propertyPath: m_AnchoredPosition.y
-      value: 0.16000032
-      objectReference: {fileID: 0}
-    - target: {fileID: 6773679731056352477, guid: 4919df64ec8c2444ba000b3ad0a5cd38, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: -1
-      objectReference: {fileID: 0}
-    - target: {fileID: 6773679731056352477, guid: 4919df64ec8c2444ba000b3ad0a5cd38, type: 3}
-      propertyPath: m_AnchoredPosition.y
-      value: 0.4
-      objectReference: {fileID: 0}
-    - target: {fileID: 7658160476332101212, guid: 4919df64ec8c2444ba000b3ad0a5cd38, type: 3}
-      propertyPath: m_Offset.y
-      value: 0.5
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4919df64ec8c2444ba000b3ad0a5cd38, type: 3}
---- !u!1 &2116692821782051118 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 5618696812282184931, guid: 4919df64ec8c2444ba000b3ad0a5cd38, type: 3}
-  m_PrefabInstance: {fileID: 2116692821782051117}
-  m_PrefabAsset: {fileID: 0}
---- !u!61 &2116692821782051119
-BoxCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2116692821782051118}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0, y: 0}
-    oldSize: {x: 0, y: 0}
-    newSize: {x: 0, y: 0}
-    adaptiveTilingThreshold: 0
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  serializedVersion: 2
-  m_Size: {x: 18, y: 10}
-  m_EdgeRadius: 0
 --- !u!1001 &7094116511004289844
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -801,10 +724,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 3776796592131870910, guid: 20fca903ebafda440aa782fe119b3efe, type: 3}
-      propertyPath: CorrectFolderPrefab
-      value: 
-      objectReference: {fileID: 1020415887631127481, guid: f903304fed0b3984ba1ba697387a73a0, type: 3}
     - target: {fileID: 7094116511365769344, guid: 20fca903ebafda440aa782fe119b3efe, type: 3}
       propertyPath: m_Name
       value: FileBrowser

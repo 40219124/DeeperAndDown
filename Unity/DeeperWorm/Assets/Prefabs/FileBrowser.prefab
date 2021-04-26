@@ -554,6 +554,7 @@ MonoBehaviour:
   CurrentFolder: {fileID: 7043312074943433483}
   FolderPrefab: {fileID: 7561993215156533761, guid: 9c542f5b1ce4e0f45aa61b982c502de4, type: 3}
   FolderOrganiser: {fileID: 7094116511292361709}
+  CorrectFolderPrefab: {fileID: 1020415887631127481, guid: f903304fed0b3984ba1ba697387a73a0, type: 3}
 --- !u!1 &7324579025641628049
 GameObject:
   m_ObjectHideFlags: 0
