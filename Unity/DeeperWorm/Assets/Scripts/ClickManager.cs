@@ -15,7 +15,8 @@ public class ClickManager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        MainCamera = Camera.main;        
+        MainCamera = Camera.main;
+        Target.gameObject.SetActive(false);
     }
 
     // Update is called once per frame
@@ -24,8 +25,8 @@ public class ClickManager : MonoBehaviour
         if (Input.GetMouseButtonDown(0))
         {
             Vector3 worldPos = TextureCamera.ScreenToWorldPoint(Input.mousePosition);
-            Target.position = new Vector3(worldPos.x, worldPos.y, 0); 
-            Debug.DrawRay(worldPos, Vector3.forward * 10.0f, Color.green,2.0f);
+            //Target.position = new Vector3(worldPos.x, worldPos.y, 0);
+            //Debug.DrawRay(worldPos, Vector3.forward * 10.0f, Color.green,2.0f);
             //Debug.Log(worldPos);
             RaycastHit2D hit = Physics2D.Raycast(worldPos, Vector2.zero);
             if((hit.collider != null) && TryGetClickable(hit.collider, out IOurClickable clickable))
