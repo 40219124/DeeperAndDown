@@ -20,7 +20,7 @@ public class LoadMiniGame : MiniBehaviour, IOurClickable
         }
     }
 
-    public override void MiniUpdate()
+    public void Update()
     {
         if (Completed)
         {
