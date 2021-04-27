@@ -9,7 +9,9 @@ public static class GameEvents
     public static event Action OnWormMove;
     public static event Action OnGameStart;
     public static event Action<bool> OnGameEnd;
+    public static event Action OnMinigameStart;
     public static event Action OnMinigameWin;
+    public static event Action OnMinigameFail;
 
     public static void WormMoved()
     {
@@ -26,11 +28,20 @@ public static class GameEvents
         OnGameStart?.Invoke();
     }
 
+    public static void StartMinigame()
+    {
+        OnMinigameStart?.Invoke();
+    }
+
     public static void MinigameFinished(bool success)
     {
         if (success)
         {
             OnMinigameWin?.Invoke();
+        }
+        else
+        {
+            OnMinigameFail?.Invoke();
         }
     }
 

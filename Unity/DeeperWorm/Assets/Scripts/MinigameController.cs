@@ -59,6 +59,7 @@ public class MinigameController : MonoBehaviour
         SetRendering(true);
         IsSimulating = true;
         UpdateRenderCanvas();
+        GameEvents.StartMinigame();
     }
 
     private void UpdateRenderCanvas()
