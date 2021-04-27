@@ -1624,10 +1624,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 4280791170031159869, guid: ed043dd91e8af724c967c3fe6f7885d5, type: 3}
-      propertyPath: m_text
-      value: 
-      objectReference: {fileID: 0}
     - target: {fileID: 4781023470921032183, guid: ed043dd91e8af724c967c3fe6f7885d5, type: 3}
       propertyPath: m_Name
       value: ProgressMonitor
@@ -1636,10 +1632,6 @@ PrefabInstance:
       propertyPath: m_Camera
       value: 
       objectReference: {fileID: 446658734}
-    - target: {fileID: 6204071724137802239, guid: ed043dd91e8af724c967c3fe6f7885d5, type: 3}
-      propertyPath: m_SortingLayerID
-      value: -1579874765
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ed043dd91e8af724c967c3fe6f7885d5, type: 3}
 --- !u!1001 &7094116511004289844
