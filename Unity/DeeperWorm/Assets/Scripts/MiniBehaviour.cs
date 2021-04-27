@@ -11,8 +11,8 @@ public class MiniBehaviour : MonoBehaviour
     }
 
     // Update is called once per frame
-    public void MiniUpdate()
+    public virtual void MiniUpdate()
     {
-        
+
     }
 }
