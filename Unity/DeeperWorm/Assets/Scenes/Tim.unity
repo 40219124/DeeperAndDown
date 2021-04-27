@@ -1762,6 +1762,38 @@ PrefabInstance:
       propertyPath: RenderCam
       value: 
       objectReference: {fileID: 696714779}
+    - target: {fileID: 8013138204473789446, guid: c3159df58ff2e7c4d84b87a91db2e237, type: 3}
+      propertyPath: Minigames.Array.size
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 8013138204473789446, guid: c3159df58ff2e7c4d84b87a91db2e237, type: 3}
+      propertyPath: Minigames.Array.data[0]
+      value: 
+      objectReference: {fileID: 1716540975818995392, guid: f70774af3c810bd48a754ddb4d3cb388, type: 3}
+    - target: {fileID: 8013138204473789446, guid: c3159df58ff2e7c4d84b87a91db2e237, type: 3}
+      propertyPath: Minigames.Array.data[1]
+      value: 
+      objectReference: {fileID: 1716540975818995392, guid: c1b2057b96e29464094107d03b64d69a, type: 3}
+    - target: {fileID: 8013138204473789446, guid: c3159df58ff2e7c4d84b87a91db2e237, type: 3}
+      propertyPath: Minigames.Array.data[2]
+      value: 
+      objectReference: {fileID: 1716540975818995392, guid: bf99a2654a8d41e48955f1b13de9728b, type: 3}
+    - target: {fileID: 8013138204473789446, guid: c3159df58ff2e7c4d84b87a91db2e237, type: 3}
+      propertyPath: Minigames.Array.data[3]
+      value: 
+      objectReference: {fileID: 1078710824911557956, guid: a2ed550ac5edff44695185348dd0087c, type: 3}
+    - target: {fileID: 8013138204473789446, guid: c3159df58ff2e7c4d84b87a91db2e237, type: 3}
+      propertyPath: Minigames.Array.data[4]
+      value: 
+      objectReference: {fileID: 54870532019527093, guid: 1760207e71871b6418eb937b970ec1b3, type: 3}
+    - target: {fileID: 8013138204473789446, guid: c3159df58ff2e7c4d84b87a91db2e237, type: 3}
+      propertyPath: Minigames.Array.data[5]
+      value: 
+      objectReference: {fileID: 8835729672084097850, guid: 11b7cd98027dda14aac30e6236e06282, type: 3}
+    - target: {fileID: 8013138204473789446, guid: c3159df58ff2e7c4d84b87a91db2e237, type: 3}
+      propertyPath: Minigames.Array.data[6]
+      value: 
+      objectReference: {fileID: 1716540975818995392, guid: 01b5b7fb1f17c794ead1994adef680a6, type: 3}
     - target: {fileID: 8013138204473789447, guid: c3159df58ff2e7c4d84b87a91db2e237, type: 3}
       propertyPath: m_RootOrder
       value: 6
