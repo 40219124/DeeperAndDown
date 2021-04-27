@@ -54,6 +54,12 @@ public class WormManager : MonoBehaviour
         {
             if (Time.time - LastDepthIncrease > TimeToWait())
             {
+                if (WormDepth >= 200)
+                {
+                    LastDepthIncrease = Time.time;
+                    GameEvents.GameEnd(false);
+                    return;
+                }
                 WormDepth++;
                 Debug.Log($"Player depth: {FileBrowser.UserDepth}. Worm depth: {WormDepth}.");
                 LastDepthIncrease = Time.time;

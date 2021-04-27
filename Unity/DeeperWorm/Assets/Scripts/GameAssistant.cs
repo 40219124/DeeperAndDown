@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class GameAssistant : MonoBehaviour
 {
@@ -24,9 +25,13 @@ public class GameAssistant : MonoBehaviour
         GameEvents.OnGameEnd -= GameEnd;
     }
 
-    private void GameEnd(bool _)
+    private void GameEnd(bool success)
     {
         Running = false;
+        if (!success)
+        {
+            SceneManager.LoadScene("GameFail");
+        }
     }
 
     private void GameStart()

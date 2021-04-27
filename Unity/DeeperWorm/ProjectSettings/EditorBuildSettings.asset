@@ -11,4 +11,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Tim.unity
     guid: af71dfdd4d46a2f4da5eab37385a3011
+  - enabled: 1
+    path: Assets/Scenes/GameFail.unity
+    guid: 9212c13a3300ff24b85526734b014cda
   m_configObjects: {}
